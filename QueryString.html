@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="page-header">查询字符串中字符串出现的次数</h2>
+    <form class="form-group">
+        <div  class="input-group">
+            <span class="input-group-addon">字符串1：</span>
+        <input type="text" id="z" class="form-control">
+            <span class="input-group-addon">字符串2：</span>
+        <input type="text" id="x" class="form-control">
+            </div>
+        <input type="button" class="btn btn-warning" id="b" value="提交">
+        <div  class="input-group">
+            <span class="input-group-addon">一共几个：</span>
+        <input type="text" id="s" class="form-control">
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    z=document.getElementById('z');
+    x=document.getElementById('x');
+    b=document.getElementById('b');
+    s=document.getElementById('s');
+    function shufa(A,B) {
+        a=A.split(B);
+        var b=a.length-1;
+        s.value=b;
+
+    }
+    b.onclick=function () {
+        var Z=z.value;
+        var X=x.value;
+        shufa(Z,X);
+    }
+
+</script>
+</html>
